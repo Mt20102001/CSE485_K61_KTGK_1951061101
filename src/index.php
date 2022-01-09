@@ -1,7 +1,7 @@
 <?php
     session_start();
     if(isset($_SESSION['error']))
-        // header("location:error.php");
+        header("location:error.php");
     $action = isset($_GET['act']) ? $_GET['act'] : 'index';
 
     require_once "controller/controller.php";
